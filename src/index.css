@@ -17,7 +17,8 @@
 }
 
 * {
-  scrollbar-width: none;
+  scrollbar-width: none !important;
+  overflow: hidden;
 }
 
 a {
@@ -76,3 +77,7 @@ button:focus-visible {
 .image {
   width: 100vw;
 }
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
