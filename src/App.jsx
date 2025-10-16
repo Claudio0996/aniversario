@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-export default function App() {
+function App() {
   const [tick, setTick] = useState(0);
+
+  // timestamp único por build
+  const buildVersion = new Date().getTime();
 
   const content = [
     { type: "img", src: "bg-orcablack.png" },
@@ -13,12 +16,14 @@ export default function App() {
   useEffect(() => {
     const timer = setInterval(() => {
       setTick((prevTick) => (prevTick + 1) % content.length);
-    }, 5 * 1000);
+    }, 3 * 1000);
 
     return () => clearInterval(timer);
   }, [content.length]);
 
   const current = content[tick];
 
-  return <>{current.type === "img" ? <img className="image" src={`./${current.src}?v=${tick}`} alt="Conteúdo dinâmico" /> : <video className="image" src={`./${current.src}?v=${tick}`} autoPlay muted loop />}</>;
+  return <>{current.type === "img" ? <img className="image" src={`./${current.src}?v=${buildVersion}-${tick}`} alt="Conteúdo dinâmico" /> : <video className="image" src={`./${current.src}?v=${buildVersion}-${tick}`} autoPlay muted loop />}</>;
 }
+
+export default App;
