@@ -74,7 +74,8 @@ button:focus-visible {
   }
 }
 
-.image {
+.image,
+.video {
   width: 100vw;
 }
 
