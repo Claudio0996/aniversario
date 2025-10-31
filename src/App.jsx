@@ -15,7 +15,7 @@ function App() {
     };
   }, [tick]);
 
-  return <>{tick % 2 === 0 ? <video autoPlay muted src={`./video-1.mp4?tick=${tick}`}></video> : <video autoPlay muted src={`./video-2.mp4?tick=${tick}`}></video>}</>;
+  return <>{tick % 2 === 0 ? <video autoPlay muted src={`./video-1.mp4?tick=${tick}`} className="video"></video> : <video autoPlay muted src={`./video-2.mp4?tick=${tick}`} className="video"></video>}</>;
 }
 
 export default App;
