@@ -75,7 +75,7 @@ button:focus-visible {
 
 .image,
 .video {
-  width: 100vw;
+  width: 100dvw;
 }
 
 /* ::-webkit-scrollbar {

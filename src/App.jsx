@@ -2,20 +2,22 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 
+const content = [{ url: "./slide-1.jpg" }, { url: "./slide-2.jpg" }, { url: "./slide-3.jpg" }, { url: "./slide-4.jpg" }, { url: "./slide-5.jpg" }];
+
 function App() {
   const [tick, setTick] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTick((prev) => prev + 1);
-    }, 30000);
+      setTick((prev) => (prev + 1) % content.length);
+    }, 20000);
 
     return () => {
       clearInterval(timer);
     };
-  }, [tick]);
+  }, []);
 
-  return <>{tick % 2 === 0 ? <video autoPlay muted src={`./video-1.mp4?tick=${tick}`} className="video"></video> : <video autoPlay muted src={`./video-2.mp4?tick=${tick}`} className="video"></video>}</>;
+  return <>{<img src={`${content[tick].url}?tick=${tick}`} className="image" />}</>;
 }
 
 export default App;
