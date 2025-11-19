@@ -17,7 +17,7 @@ function App() {
   //   };
   // }, []);
 
-  return <video src={`./video-1.mp4`} className="video" autoPlay muted />;
+  return <video src={`./video-1.mp4`} className="video" autoPlay muted loop />;
 }
 
 export default App;
