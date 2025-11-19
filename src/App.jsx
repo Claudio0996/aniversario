@@ -21,7 +21,7 @@ function App() {
     };
   }, []);
 
-  return <>{content[tick].type === "video" ? <video src={`${content[tick].url}`} className="video" autoPlay muted loop /> : <img src={`${content[tick].url}?tick=${tick}`} className="image"></img>}</>;
+  return <>{content[tick].type === "video" ? <video src={`${content[tick].url}?tick=${tick}`} className="video" autoPlay muted loop /> : <img src={`${content[tick].url}?tick=${tick}`} className="image"></img>}</>;
 }
 
 export default App;
