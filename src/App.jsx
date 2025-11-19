@@ -2,22 +2,26 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 
-// const content = [{ url: "./slide-1.jpg" }, { url: "./slide-2.jpg" }, { url: "./slide-3.jpg" }, { url: "./slide-4.jpg" }, { url: "./slide-5.jpg" }];
+const content = [
+  { url: "./image-2.png", type: "image" },
+  { url: "./image-1.png", type: "image" },
+  { url: "./video-1.mp4", type: "video" },
+];
 
 function App() {
-  // const [tick, setTick] = useState(0);
+  const [tick, setTick] = useState(0);
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setTick((prev) => (prev + 1) % content.length);
-  //   }, 20000);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTick((prev) => (prev + 1) % content.length);
+    }, 30000);
 
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }, []);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
-  return <video src={`./video-1.mp4`} className="video" autoPlay muted loop />;
+  return <>{content[tick].type === "video" ? <video src={`${content[tick].url}&tick=${tick}`} className="video" autoPlay muted loop /> : <img src={`${content[tick].url}?tick=${tick}`} className="image"></img>}</>;
 }
 
 export default App;
