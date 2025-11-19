@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const timer = setInterval(() => {
       setTick((prev) => (prev + 1) % content.length);
-    }, 30000);
+    }, 5000);
 
     return () => {
       clearInterval(timer);
