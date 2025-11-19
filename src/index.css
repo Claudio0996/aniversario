@@ -74,12 +74,14 @@ button:focus-visible {
 }
 
 body {
-  width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 .image,
 .video {
   width: 100vw;
+  height: 100vh;
 }
 
 /* ::-webkit-scrollbar {
