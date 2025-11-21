@@ -5,7 +5,6 @@ import "./App.css";
 const content = [
   { url: "./image-2.png", type: "image" },
   { url: "./image-1.png", type: "image" },
-  { url: "./video-1.mp4", type: "video" },
 ];
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
     };
   }, []);
 
-  return <>{content[tick].type === "video" ? <video src={`${content[tick].url}?tick=${tick}`} className="video" autoPlay muted loop /> : <img src={`${content[tick].url}?tick=${tick}`} className="image"></img>}</>;
+  return <>{<img src={`${content[tick].url}?tick=${tick}`} className="image"></img>}</>;
 }
 
 export default App;
