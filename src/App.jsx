@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 
-const content = [{ url: "./image-1.jpg", type: "image" }];
+const content = [
+  { url: "./image-1.png", type: "image" },
+  { url: "./image-2.png", type: "image" },
+];
 
 function App() {
   const [tick, setTick] = useState(0);
