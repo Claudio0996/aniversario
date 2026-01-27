@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 
-const content = [
-  { url: "./video-1.mp4", type: "video" },
-  { url: "./video-2.mp4", type: "video" },
-];
+const content = [{ url: "./video-1.mp4", type: "video" }];
 
 function App() {
   const [tick, setTick] = useState(0);
