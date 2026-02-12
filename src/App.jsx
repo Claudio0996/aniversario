@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 
-const content = [{ url: "./video-1.mp4", type: "video" }];
+const content = [
+  { url: "./video-1.mp4", type: "video" },
+  { url: "./image-1.png", type: "image" },
+];
 
 function App() {
   const [tick, setTick] = useState(0);
@@ -17,7 +20,9 @@ function App() {
     };
   }, []);
 
-  return <video src={`${content[tick].url}?=${tick}`} className="image" autoPlay loop muted />;
+  let contentAvailable = content[tick];
+
+  return <>{contentAvailable.type === "video" ? <video src={`${contentAvailable.url}?=${tick}`} className="image" autoPlay loop muted /> : <img className="image" src={`${contentAvailable.url}?=${tick}`} />}</>;
 }
 
 export default App;
