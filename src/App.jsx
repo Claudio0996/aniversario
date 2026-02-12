@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 
-const content = [{ url: "./image-1.png", type: "video" }];
+const content = [{ url: "./video-1.mp4", type: "video" }];
 
 function App() {
   const [tick, setTick] = useState(0);
@@ -17,7 +17,7 @@ function App() {
     };
   }, []);
 
-  return <img src={`${content[tick].url}?=${tick}`} className="image" />;
+  return <video src={`${content[tick].url}?=${tick}`} className="image" autoPlay loop muted />;
 }
 
 export default App;
