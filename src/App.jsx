@@ -19,11 +19,8 @@ const content = [
   { url: "./video-14.mp4", type: "video" },
   { url: "./video-15.mp4", type: "video" },
   { url: "./video-16.mp4", type: "video" },
-  { url: "./video-17.mp4", type: "video" },
-  { url: "./video-18.mp4", type: "video" },
-  { url: "./video-19.mp4", type: "video" },
-  { url: "./video-20.mp4", type: "video" },
   { url: "./image-1.png", type: "image" },
+  { url: "./image-2.png", type: "image" },
 ];
 
 function App() {
