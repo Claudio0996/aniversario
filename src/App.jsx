@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 const content = [
+  { url: "./image-1.png", type: "image" },
   { url: "./video-1.mp4", type: "video" },
   { url: "./video-2.mp4", type: "video" },
   { url: "./video-3.mp4", type: "video" },
@@ -19,8 +20,12 @@ const content = [
   { url: "./video-14.mp4", type: "video" },
   { url: "./video-15.mp4", type: "video" },
   { url: "./video-16.mp4", type: "video" },
-  { url: "./image-1.png", type: "image" },
-  { url: "./image-2.png", type: "image" },
+  { url: "./video-17.mp4", type: "video" },
+  { url: "./video-18.mp4", type: "video" },
+  { url: "./video-19.mp4", type: "video" },
+  { url: "./video-20.mp4", type: "video" },
+  { url: "./video-21.mp4", type: "video" },
+  { url: "./video-22.mp4", type: "video" },
 ];
 
 function App() {
