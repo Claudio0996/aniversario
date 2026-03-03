@@ -8,6 +8,7 @@ const content = [
   { url: "./video-2.mp4", type: "video" },
   { url: "./image-2.png", type: "image" },
   { url: "./image-3.png", type: "image" },
+  { url: "./image-4.png", type: "image" },
 ];
 
 function App() {
