@@ -8,7 +8,6 @@ const content = [
   { url: "./image-2.png", type: "image" },
   { url: "./image-3.png", type: "image" },
   { url: "./image-4.png", type: "image" },
-  { url: "./image-5.png", type: "image" },
 ];
 
 function App() {
@@ -26,7 +25,7 @@ function App() {
 
   let contentAvailable = content[tick];
 
-  return <>{contentAvailable.type === "video" ? <video src={`${contentAvailable.url}?=tick=${tick}`} className="image" autoPlay loop muted /> : <img className="image" src={`${contentAvailable.url}?=${tick}`} />}</>;
+  return <>{contentAvailable.type === "video" ? <video src={`${contentAvailable.url}?=${tick}`} className="video" autoPlay loop muted /> : <img className="image" src={`${contentAvailable.url}?=${tick}`} />}</>;
 }
 
 export default App;
