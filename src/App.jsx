@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   let contentAvailable = content[tick];
-
+a
   return <>{contentAvailable.type === "video" ? <video src={`${contentAvailable.url}?=${tick}`} className="video" autoPlay loop muted /> : <img className="image" src={`${contentAvailable.url}?=${tick}`} />}</>;
 }
 
