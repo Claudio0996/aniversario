@@ -4,11 +4,15 @@ import "./App.css";
 
 const content = [
   { url: "./image-1.png", type: "image" },
-  { url: "./video-1.mp4", type: "video" },
   { url: "./image-2.png", type: "image" },
   { url: "./image-3.png", type: "image" },
   { url: "./image-4.png", type: "image" },
   { url: "./image-5.png", type: "image" },
+  { url: "./image-6.png", type: "image" },
+  { url: "./image-7.png", type: "image" },
+  { url: "./image-8.png", type: "image" },
+  { url: "./image-9.png", type: "image" },
+  { url: "./image-10.png", type: "image" },
 ];
 
 function App() {
