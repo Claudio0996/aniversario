@@ -4,6 +4,8 @@ import "./App.css";
 
 const content = [
   { url: "./image-1.png", type: "image" },
+  { url: "./image-12.png", type: "image" },
+  { url: "./image-11.png", type: "image" },
   { url: "./image-2.png", type: "image" },
   { url: "./image-3.png", type: "image" },
   { url: "./image-4.png", type: "image" },
