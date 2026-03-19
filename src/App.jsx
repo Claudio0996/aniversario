@@ -10,7 +10,7 @@ const content = [
   { url: "./image-5.png", type: "image" },
   { url: "./image-6.png", type: "image" },
   { url: "./image-7.png", type: "image" },
-  { url: "./image-8.png", type: "image" },
+  { url: "./video-1.mp4", type: "video" },
 ];
 
 function App() {
