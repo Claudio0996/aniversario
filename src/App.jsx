@@ -8,9 +8,17 @@ const content = [
   { url: "./image-3.png", type: "image" },
   { url: "./image-4.png", type: "image" },
   { url: "./image-5.png", type: "image" },
+  { url: "./image-6.png", type: "image" },
+  { url: "./image-7.png", type: "image" },
+  { url: "./image-8.png", type: "image" },
+  { url: "./image-9.png", type: "image" },
+  { url: "./image-10.png", type: "image" },
+  { url: "./image-11.png", type: "image" },
+  { url: "./image-12.png", type: "image" },
   { url: "./video-1.mp4", type: "video" },
   { url: "./video-2.mp4", type: "video" },
   { url: "./video-3.mp4", type: "video" },
+  { url: "./video-4.mp4", type: "video" },
 ];
 
 function App() {
