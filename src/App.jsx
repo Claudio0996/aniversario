@@ -4,6 +4,12 @@ import "./App.css";
 
 const content = [
   { url: "./image-1.png", type: "image" },
+  { url: "./video-1.mp4", type: "video" },
+  { url: "./video-2.mp4", type: "video" },
+  { url: "./video-3.mp4", type: "video" },
+  { url: "./video-4.mp4", type: "video" },
+  { url: "./video-5.mp4", type: "video" },
+  { url: "./video-6.mp4", type: "video" },
   { url: "./image-2.png", type: "image" },
   { url: "./image-3.png", type: "image" },
   { url: "./image-4.png", type: "image" },
@@ -15,10 +21,6 @@ const content = [
   { url: "./image-10.png", type: "image" },
   { url: "./image-11.png", type: "image" },
   { url: "./image-12.png", type: "image" },
-  { url: "./video-1.mp4", type: "video" },
-  { url: "./video-2.mp4", type: "video" },
-  { url: "./video-3.mp4", type: "video" },
-  { url: "./video-4.mp4", type: "video" },
 ];
 
 function App() {
