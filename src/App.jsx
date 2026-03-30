@@ -9,6 +9,8 @@ const content = [
   { url: "./video-3.mp4", type: "video" },
   { url: "./video-4.mp4", type: "video" },
   { url: "./video-5.mp4", type: "video" },
+  { url: "./video-8.mp4", type: "video" },
+  { url: "./video-9.mp4", type: "video" },
   { url: "./video-6.mp4", type: "video" },
   { url: "./video-7.mp4", type: "video" },
   { url: "./image-2.png", type: "image" },
