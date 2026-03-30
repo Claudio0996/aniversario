@@ -10,17 +10,10 @@ const content = [
   { url: "./video-4.mp4", type: "video" },
   { url: "./video-5.mp4", type: "video" },
   { url: "./video-6.mp4", type: "video" },
+  { url: "./video-7.mp4", type: "video" },
   { url: "./image-2.png", type: "image" },
   { url: "./image-3.png", type: "image" },
   { url: "./image-4.png", type: "image" },
-  { url: "./image-5.png", type: "image" },
-  { url: "./image-6.png", type: "image" },
-  { url: "./image-7.png", type: "image" },
-  { url: "./image-8.png", type: "image" },
-  { url: "./image-9.png", type: "image" },
-  { url: "./image-10.png", type: "image" },
-  { url: "./image-11.png", type: "image" },
-  { url: "./image-12.png", type: "image" },
 ];
 
 function App() {
