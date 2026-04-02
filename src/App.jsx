@@ -5,20 +5,10 @@ import "./App.css";
 const content = [
   { url: "./image-1.png", type: "image" },
   { url: "./video-1.mp4", type: "video" },
-  { url: "./video-2.mp4", type: "video" },
-  { url: "./video-3.mp4", type: "video" },
-  { url: "./video-4.mp4", type: "video" },
-  { url: "./video-5.mp4", type: "video" },
-  { url: "./video-8.mp4", type: "video" },
-  { url: "./video-9.mp4", type: "video" },
-  { url: "./video-10.mp4", type: "video" },
-  { url: "./video-11.mp4", type: "video" },
-  { url: "./video-13.mp4", type: "video" },
-  { url: "./video-6.mp4", type: "video" },
-  { url: "./video-7.mp4", type: "video" },
   { url: "./image-2.png", type: "image" },
   { url: "./image-3.png", type: "image" },
   { url: "./image-4.png", type: "image" },
+  { url: "./image-5.png", type: "image" },
 ];
 
 function App() {
